@@ -12,7 +12,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "package": "ng-packagr -p package.json && cpx \"./deployment-package/bundles/*\" ./deployment",
-    "build-package": "npm run build && npm run package",
+    "build-deploy": "ng build --prod --output-path=deployment --base-href /micro-frontend-alpha/ && npm run package",
     "server": "http-server deployment -p 3333 --cors -c-1"
   },
   "private": true,

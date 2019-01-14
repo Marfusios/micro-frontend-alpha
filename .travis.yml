@@ -8,7 +8,7 @@ branches:
     - gh-pages # will be deployed to, no need to build it
 
 script:
-  - npm run build-package # Generates the deployment folder with built angular app and umd bundle
+  - npm run build-deploy # Generates the deployment folder with built angular app and umd bundle
 
 deploy:
   provider: pages
