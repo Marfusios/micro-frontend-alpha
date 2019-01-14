@@ -1,5 +1,5 @@
 ![logo](logo.png)
-# ALPHA - micro frontend [![Build Status](https://travis-ci.com/Marfusios/micro-frontend-alpha.svg?branch=master)](https://travis-ci.com/Marfusios/micro-frontend-alpha)
+# ALPHA - micro frontend [![Build Status](https://travis-ci.com/Marfusios/micro-frontend-alpha.svg?branch=master)](https://travis-ci.com/Marfusios/micro-frontend-alpha) [![demo link](https://img.shields.io/badge/demo-link-blue.svg)](http://mkotas.cz/micro-frontend-gateway)
 
 This is example of the one independent micro frontend. 
 A primary application (gateway to the whole system) can be found here: [github.com/marfusios/micro-frontend-gateway](https://github.com/Marfusios/micro-frontend-gateway)
