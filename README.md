@@ -1,27 +1,21 @@
-# MicroFrontendAlpha
+![logo](logo.png)
+# ALPHA - micro frontend [![Build Status](https://travis-ci.com/Marfusios/micro-frontend-alpha.svg?branch=master)](https://travis-ci.com/Marfusios/micro-frontend-alpha)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
+This is example of the one independent micro frontend. 
+A primary application (gateway to the whole system) can be found here: [github.com/marfusios/micro-frontend-gateway](https://github.com/Marfusios/micro-frontend-gateway)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Current implementation is based on [Angular](https://angular.io/) and [Angular Package Format](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview) (via library [ng-packagr](https://github.com/ng-packagr/ng-packagr)).
 
-## Code scaffolding
+### Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* local development
+    * `npm start`
+* local deployment
+    * `npm run package`
+    * `npm run server`
+    * open browser at 'localhost:3333'
+    * bundle can be downloaded from 'localhost:3333/bundle.umd.js'
+* remote deployment
+    * `npm build-deploy`
+    * copy content of 'deployment' directory into web server
