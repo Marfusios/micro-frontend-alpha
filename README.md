@@ -7,6 +7,8 @@ A primary application (gateway to the whole system) can be found here: [github.c
 
 Current implementation is based on [Angular](https://angular.io/) and [Angular Package Format](https://docs.google.com/document/d/1CZC2rcpxffTDfRDs6p1cfbmKNLA6x5O-NtkJglDaBVs/preview) (via library [ng-packagr](https://github.com/ng-packagr/ng-packagr)).
 
+Deployed at: [mkotas.cz/micro-frontend-alpha](http://mkotas.cz/micro-frontend-alpha)
+
 ### Usage
 
 * local development
