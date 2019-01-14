@@ -3,13 +3,15 @@
   <div class="content">
 
     <p class="title">
-      This is component from microservice ALPHA
+      This is entry component from microservice ALPHA
     </p>
 
     <div class="row">
 
-      <button>Submit</button>
-      <button>Cancel</button>
+      <button (click)="onSubmit()">Submit</button>
+      <button (click)="onCancel()">Cancel</button>
+
+      <span>{{message}}</span>
 
     </div>
 
