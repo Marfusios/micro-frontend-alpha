@@ -20,6 +20,7 @@
     "lib": {
       "entryFile": "src/public_api.ts",
       "flatModuleFile": "bundle"
+
     },
     "dest": "deployment-package",
     "whitelistedNonPeerDependencies": [

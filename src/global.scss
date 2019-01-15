@@ -1,0 +1,26 @@
+/* Import this file into every component */
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.back-dark {
+  background-color: #151515;
+}
+
+.description {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.8);
+}

@@ -7,19 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntryComponent implements OnInit {
 
-  message: string;
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  onSubmit() {
-    this.message = 'Has been submitted';
-  }
-
-  onCancel() {
-    this.message = 'Has been cancelled';
   }
 
 }
