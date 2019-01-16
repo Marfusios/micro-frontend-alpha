@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { EntryRoutingModule } from './entry-routing.module';
@@ -17,6 +17,7 @@ import { ButtonsExampleComponent } from './buttons-example/buttons-example.compo
   imports: [
     CommonModule,
     EntryRoutingModule
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class EntryModule { }
