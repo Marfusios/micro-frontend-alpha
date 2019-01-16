@@ -3,19 +3,23 @@ import { CommonModule } from '@angular/common';
 
 import { EntryRoutingModule } from './entry-routing.module';
 import { EntryComponent } from './entry.component';
+import { EntryModule as ComponentsModule } from 'micro-frontend-shared/src/entry/entry.module';
 import { AssetsExampleComponent } from './assets-example/assets-example.component';
 import { StylesExampleComponent } from './styles-example/styles-example.component';
 import { ButtonsExampleComponent } from './buttons-example/buttons-example.component';
+import { SharedExampleComponent } from './shared-example/shared-example.component';
 
 @NgModule({
   declarations: [
     EntryComponent,
+    SharedExampleComponent,
     AssetsExampleComponent,
     StylesExampleComponent,
-    ButtonsExampleComponent
+    ButtonsExampleComponent,
   ],
   imports: [
     CommonModule,
+    ComponentsModule,
     EntryRoutingModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
