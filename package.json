@@ -11,7 +11,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "package": "ng-packagr -p package.json && cpx \"./deployment-package/bundles/*\" ./deployment",
+    "package": "ng-packagr -p package.json && cpx \"./deployment-package/bundles/*\" ./deployment && cpx \"./src/assets/*\" ./deployment/assets",
     "build-deploy": "ng build --prod --output-path=deployment --base-href /micro-frontend-alpha/ && npm run package",
     "server": "http-server deployment -p 3333 --cors -c-1"
   },
@@ -37,7 +37,7 @@
     "@angular/router": "7.2.0",
     "core-js": "2.5.4",
     "rxjs": "6.3.3",
-    "tslib": "^1.9.0",
+    "tslib": "1.9.0",
     "zone.js": "0.8.26"
   },
   "devDependencies": {
