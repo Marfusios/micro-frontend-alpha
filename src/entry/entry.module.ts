@@ -9,6 +9,7 @@ import { AssetsExampleComponent } from './assets-example/assets-example.componen
 import { StylesExampleComponent } from './styles-example/styles-example.component';
 import { ButtonsExampleComponent } from './buttons-example/buttons-example.component';
 import { SharedExampleComponent } from './shared-example/shared-example.component';
+import { WebcomponentsExampleComponent } from './webcomponents-example/webcomponents-example.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SharedExampleComponent } from './shared-example/shared-example.componen
     AssetsExampleComponent,
     StylesExampleComponent,
     ButtonsExampleComponent,
+    WebcomponentsExampleComponent,
   ],
   imports: [
     CommonModule,
