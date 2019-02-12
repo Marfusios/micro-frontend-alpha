@@ -10,6 +10,7 @@ import { StylesExampleComponent } from './styles-example/styles-example.componen
 import { ButtonsExampleComponent } from './buttons-example/buttons-example.component';
 import { SharedExampleComponent } from './shared-example/shared-example.component';
 import { WebcomponentsExampleComponent } from './webcomponents-example/webcomponents-example.component';
+import { StateExampleComponent } from './state-example/state-example.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { WebcomponentsExampleComponent } from './webcomponents-example/webcompon
     StylesExampleComponent,
     ButtonsExampleComponent,
     WebcomponentsExampleComponent,
+    StateExampleComponent,
   ],
   imports: [
     CommonModule,
