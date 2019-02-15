@@ -11,21 +11,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "package": "ng-packagr -p package.json && cpx \"./deployment-package/bundles/*\" ./deployment && cpx \"./src/assets/*\" ./deployment/assets",
+    "package": "ng-packagr -p ng-package.json && cpx \"./deployment-package/bundles/*\" ./deployment && cpx \"./src/assets/*\" ./deployment/assets",
+    "package:watch": "ng-packagr -p ng-package.json --watch && cpx \"./deployment-package/bundles/*\" ./deployment",
+    "package:global": "ng-packagr -p ng-package.global.json && cpx \"./global-package/bundles/*\" ./deployment",
     "build-deploy": "ng build --prod --output-path=deployment --base-href /micro-frontend-alpha/ && npm run package",
     "server": "http-server deployment -p 3333 --cors -c-1"
   },
   "private": true,
-  "ngPackage": {
-    "lib": {
-      "entryFile": "src/public_api.ts",
-      "flatModuleFile": "bundle"
-    },
-    "dest": "deployment-package",
-    "whitelistedNonPeerDependencies": [
-      "."
-    ]
-  },
   "bundledDependencies": [
     "@angular/animations",
     "@angular/cdk",
